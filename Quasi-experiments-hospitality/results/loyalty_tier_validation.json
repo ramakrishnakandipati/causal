@@ -1,0 +1,47 @@
+{
+  "device": "cuda",
+  "data": {
+    "guests": 30000,
+    "train": 21000,
+    "test": 9000,
+    "share_offered": 0.37,
+    "share_with_overlap_0.05_0.95": 0.9974
+  },
+  "true_ate_dollars": 85.43290062352797,
+  "naive_difference": {
+    "ate": 222.87642665918952,
+    "ci_low": 217.14007768766413,
+    "ci_high": 228.6127756307149
+  },
+  "linear_dml_ate_test": {
+    "estimate": 81.73472709191222,
+    "ci_low": 78.05403735370285,
+    "ci_high": 85.41541683012157,
+    "covers_zero": false
+  },
+  "causal_forest_ate_test": {
+    "estimate": 82.28709136512185,
+    "ci_low": 58.979593373978624,
+    "ci_high": 105.59458935626508,
+    "covers_zero": false
+  },
+  "linear_dml_cate_accuracy": {
+    "rmse": 4.518499364266796,
+    "corr_with_true": 0.9988127031489233
+  },
+  "causal_forest_cate_accuracy": {
+    "rmse": 11.771834918152233,
+    "corr_with_true": 0.9678941520218302
+  },
+  "dml_ci_covers_true_ate_test": false,
+  "refutations": {
+    "placebo_treatment_ate": 1.6108955759912291,
+    "placebo_ci": [
+      -2.017140246507402,
+      5.238931398489859
+    ],
+    "placebo_ci_covers_zero": true,
+    "random_common_cause_ate": 81.45081543532439,
+    "random_common_cause_change": -0.2839116565878328
+  }
+}

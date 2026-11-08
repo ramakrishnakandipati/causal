@@ -1,0 +1,40 @@
+XGBoost device: cuda
+Guests: 30,000 | offered upgrade: 37.0% | true ATE: $85.43
+Naive difference: $222.88 [217.14, 228.61]
+Fitting LinearDML...
+Fitting CausalForestDML...
+Running refutations...
+
+=== ATE on 90-day spend ($) ===
+True ATE (simulation):             85.43
+Naive difference:                 222.88  [217.14, 228.61]
+LinearDML (hold-out):              81.73  [78.05, 85.42]  covers zero: False
+CausalForestDML (hold-out):        82.29  [58.98, 105.59]
+
+=== LinearDML heterogeneity (effect modifiers) ===
+          term    coef  ci_low  ci_high  significant
+     intercept  37.008  25.691   48.325         True
+   prior_stays   5.012   2.235    7.789         True
+business_share  60.129  41.798   78.461         True
+     is_resort  87.935  77.979   97.891         True
+     is_budget -33.323 -42.566  -24.080         True
+   is_boutique   9.042  -2.307   20.391        False
+
+=== CATE by property type (LinearDML vs truth) ===
+property_type  n_guests  dml_ate  dml_ci_low  dml_ci_high  true_ate
+         City      3604    70.69       64.93        76.46     73.61
+       Resort      1800   159.35      151.22       167.49    164.33
+       Budget      2263    38.27       31.01        45.52     39.51
+     Boutique      1333    80.57       70.78        90.37     89.45
+
+=== CATE accuracy (hold-out) ===
+LinearDML:       RMSE 4.52, corr 0.999
+CausalForestDML: RMSE 11.77, corr 0.968
+
+=== Refutations ===
+Placebo treatment ATE: 1.61 (CI covers zero: True)
+Random common cause:   81.45 (change -0.28)
+
+Overlap: 99.7% of guests within propensity 0.05-0.95
+Figures: D:\Ramakrishna_D\Python\GitProjects\causal\Quasi-experiments-hospitality\figures
+Results: D:\Ramakrishna_D\Python\GitProjects\causal\Quasi-experiments-hospitality\results
