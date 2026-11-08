@@ -1,0 +1,141 @@
+GPU: NVIDIA GeForce RTX 3090 | torch 2.15.0+cu132 | XGBoost device cuda:0
+Loaded 64,000 rows, 15 features; treated share 0.667
+Naive RCT ATE (test): 0.0032 nights [0.0006, 0.0057]
+
+Fitting S-Learner [cuda (XGBoost)] ...
+  done in 1.0s, mean CATE 0.0038 nights
+
+Fitting T-Learner [cuda (XGBoost)] ...
+  done in 1.3s, mean CATE 0.0036 nights
+
+Fitting X-Learner [cuda (XGBoost)] ...
+  done in 2.7s, mean CATE 0.0034 nights
+
+Fitting Domain-Adaptation [cuda (XGBoost)] ...
+  done in 2.1s, mean CATE 0.0037 nights
+
+Fitting DRLearner [cuda (XGBoost)] ...
+  done in 3.7s, mean CATE 0.0037 nights
+
+Fitting LinearDRLearner [cuda (XGBoost nuisances)] ...
+  done in 2.9s, mean CATE 0.0044 nights
+
+Fitting ForestDRLearner [cuda nuisances + CPU forest] ...
+  done in 4.0s, mean CATE 0.0043 nights
+
+Fitting LinearDML [cuda (XGBoost nuisances)] ...
+  done in 4.7s, mean CATE 0.0045 nights
+
+Fitting NonParamDML [cuda (XGBoost)] ...
+  done in 6.4s, mean CATE 0.0041 nights
+
+Fitting CausalForestDML [cuda nuisances + CPU forest] ...
+  done in 7.5s, mean CATE 0.0045 nights
+
+Fitting CausalML-S [cuda (XGBoost)] ...
+  done in 1.2s, mean CATE 0.0039 nights
+
+Fitting CausalML-T [cuda (XGBoost)] ...
+  done in 1.5s, mean CATE 0.0036 nights
+
+Fitting CausalML-X [cuda (XGBoost)] ...
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+  done in 32.1s, mean CATE 0.0034 nights
+
+Fitting CausalML-R [cuda (XGBoost)] ...
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+C:\Users\RamaKrishna\anaconda3\envs\causal-gpu\Lib\site-packages\sklearn\linear_model\_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+  done in 37.2s, mean CATE 0.0041 nights
+
+Fitting TARNet [cuda (PyTorch)] ...
+  done in 8.5s, mean CATE 0.0060 nights
+
+Fitting DragonNet [cuda (PyTorch)] ...
+  done in 9.3s, mean CATE 0.0055 nights
+
+Placebo ATE (permuted T, T-Learner): 0.0008 nights
+
+            model        family                      device  fit_seconds  mean_cate_nights  qini_auc  random_auc  qini_gain_over_random  decile_pred_vs_actual_corr  net_revenue_all_customers  best_target_deciles  net_revenue_best_cutoff
+Domain-Adaptation   EconML meta              cuda (XGBoost)          2.1             0.004    28.130      20.469                  7.662                       0.627                -277111.862                    1               -27182.096
+        DRLearner     EconML DR              cuda (XGBoost)          3.7             0.004    25.348      20.469                  4.880                       0.277                -276897.947                    1               -27473.251
+        X-Learner   EconML meta              cuda (XGBoost)          2.7             0.003    23.499      20.469                  3.030                       0.210                -276866.352                    1               -24403.483
+       CausalML-X CausalML meta              cuda (XGBoost)         32.1             0.003    22.454      20.469                  1.985                       0.255                -276870.784                    1               -24313.883
+      NonParamDML    EconML DML              cuda (XGBoost)          6.4             0.004    22.388      20.469                  1.920                       0.065                -276721.609                    1               -28888.689
+       CausalML-R CausalML meta              cuda (XGBoost)         37.2             0.004    22.024      20.469                  1.555                       0.292                -276825.433                    1               -26173.490
+  ForestDRLearner     EconML DR cuda nuisances + CPU forest          4.0             0.004    21.993      20.469                  1.524                       0.104                -276871.194                    1               -28467.115
+        LinearDML    EconML DML    cuda (XGBoost nuisances)          4.7             0.004    20.820      20.469                  0.351                      -0.116                -276743.786                    1               -29669.075
+        T-Learner   EconML meta              cuda (XGBoost)          1.3             0.004    20.805      20.469                  0.337                       0.192                -276639.572                    1               -26086.132
+       CausalML-T CausalML meta              cuda (XGBoost)          1.5             0.004    20.805      20.469                  0.337                       0.192                -276639.572                    1               -26086.132
+  LinearDRLearner     EconML DR    cuda (XGBoost nuisances)          2.9             0.004    20.553      20.469                  0.084                      -0.114                -276691.810                    1               -29687.497
+       CausalML-S CausalML meta              cuda (XGBoost)          1.2             0.004    18.675      20.469                 -1.793                      -0.345                -276924.511                    1               -28004.934
+        S-Learner   EconML meta              cuda (XGBoost)          1.0             0.004    18.482      20.469                 -1.986                      -0.268                -276754.901                    1               -28181.026
+  CausalForestDML EconML forest cuda nuisances + CPU forest          7.5             0.004    18.183      20.469                 -2.286                      -0.241                -276764.849                    1               -29292.489
+           TARNet        Neural              cuda (PyTorch)          8.5             0.006    18.025      20.469                 -2.443                      -0.211                -276913.187                    1               -29501.889
+        DragonNet        Neural              cuda (PyTorch)          9.3             0.006    15.342      20.469                 -5.127                      -0.407                -277074.089                    1               -30031.491
+
+Fitted 16/16 models. Saved figures to D:\Ramakrishna_D\Python\GitProjects\causal\uplift_hospitality\figures, models to D:\Ramakrishna_D\Python\GitProjects\causal\uplift_hospitality\models, results to D:\Ramakrishna_D\Python\GitProjects\causal\uplift_hospitality\results
