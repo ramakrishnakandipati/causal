@@ -1,0 +1,17 @@
+[
+  "months_since_last_stay",
+  "historical_room_spend",
+  "leisure_package_affinity",
+  "family_package_affinity",
+  "first_stay_flag",
+  "drive_market_tier_Surburban",
+  "drive_market_tier_Urban",
+  "booking_channel_Phone",
+  "booking_channel_Web",
+  "spend_band_2) $100 - $200",
+  "spend_band_3) $200 - $350",
+  "spend_band_4) $350 - $500",
+  "spend_band_5) $500 - $750",
+  "spend_band_6) $750 - $1,000",
+  "spend_band_7) $1,000 +"
+]
